@@ -2,7 +2,11 @@
   "name": "Frontplate",
   "version": "5.0.0",
   "description": "フロントエンド開発の効率をあげるフルスタックテンプレート",
-  "dependencies": {},
+  "dependencies": {
+    "gsap": "^1.20.3",
+    "pixi-filters": "^2.3.1",
+    "pixi.js": "^4.6.2"
+  },
   "devDependencies": {},
   "scripts": {
     "start": "frp build && frp serve -t",
