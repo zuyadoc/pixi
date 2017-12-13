@@ -66,13 +66,15 @@ PIXI.loader.add('image', 'assets/images/sample.JPG').load((loader, resources) =>
     const MAX_Y_SCALE = 70;
     const CHANGE_PARAM = 2;
 
+    // マスクを動かす
     TweenMax.to(displacementfilter.scale , 1 ,{
         x: MAX_X_SCALE,
         y: MAX_Y_SCALE
     });
 
+    // 動かす
     app.ticker.add((time) => {
-        map.x += time * 10;
+            map.x += time * 10;
         map.y += 3;
     });
 
